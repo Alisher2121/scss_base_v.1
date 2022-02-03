@@ -1,0 +1,19 @@
+//Responsive - max width
+// Usage:
+//ex.@use '../tools/responsive';
+//@include responsive.max($breakpoint) {...}
+
+
+@mixin max($breakpoint: 50rem) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }     
+}
+
+//Responsive - min width
+
+@mixin min($breakpoint: 1400px) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }     
+}
